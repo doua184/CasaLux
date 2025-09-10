@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;600;700;800&display=swap');
+
+/* Reset & Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Urbanist', sans-serif; /* Ajout de la famille sans-serif comme fallback */
+}
+
+body {
+    background-color: #fff; /* Couleur de fond standard */
+    overflow-x: hidden; /* Empêcher le défilement horizontal */
+    background-image: url("image3.jpg");
+    background-size: cover;
+    }
+
+/* Alert Banner */
+.alert {
+    background-color: #406844;
+    color: white;
+    font-size: 14px;
+    text-align: center;
+    padding: 10px 0;
+    font-weight: 600;
+}
+
+/* Navigation */
+.nav {
+    background: #fff;
+    padding: 15px 0;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.nav__container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 700;
+    text-decoration: none;
+    color: #333;
+}
+
+/* Navigation Links */
+.nav__links {
+  list-style: none; /* Retirer les puces de la liste */
+  display: flex; /* Utiliser flexbox pour les éléments enfants */
+  gap: 20px; /* Espacement entre les éléments */
+  justify-content: center; /* Centrer les éléments horizontalement */
+  align-items: center; /* Optionnel : centrer verticalement les éléments */
+  width: 100%;
+}
+
+.nav__links li {
+    display: inline-block;
+}
+
+.nav__links a {
+    text-decoration: none;
+    font-size: 16px;
+    color: #333;
+    font-weight: 600;
+    transition: color 0.3s ease-in-out;
+    display: inline-block;
+}
+
+.nav__links a:hover {
+    text-decoration: underline;
+    color: #b8b399;
+    transition: 0.3s;
+}
+
+/* Search Bar */
+.nav__search {
+    display: flex;
+    align-items: center;
+    background: #eee;
+    padding: 5px 10px;
+    border-radius: 20px;
+}
+
+.nav__search input {
+    border: none;
+    background: transparent;
+    outline: none;
+    padding: 5px;
+    font-size: 14px;
+    width: 120px;
+    transition: width 0.3s ease-in-out; /* Transition pour l'input au focus */
+}
+
+.nav__search input:focus {
+    width: 200px; /* Extension du champ de recherche au focus */
+}
+
+.search-btn {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    color: #333;
+}
+
+section{
+    background-color: transparent;
+    padding: 30px;
+    max-width: 100%;
+    border-radius: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: block;
+    justify-content: center;
+    align-items: center;
+
+}
+section h1{
+    font-size: 30px;
+    text-align: center;
+    color: white;
+    margin-bottom: 20px;
+}
+.input-box{
+    width: 100%;
+    position: relative;
+    margin-bottom:25px ;
+}
+.input-box input{
+    width: 100%;
+    padding: 15px;
+    border-radius: 25px;
+    outline: none ;
+    background-color: transparent ;
+    border: 2px solid rgb(123, 105, 105); 
+    color: white;
+    padding-right: 40px;
+
+}
+.input-box input::placeholder{
+    color: white;
+}
+.input-box i{
+    position: absolute;
+    transform: translateY(40%);
+    right: 20px;
+    top: 50%;
+    color: white;
+
+}
+.remenber-forget{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 15px;
+    color: white;
+    margin-bottom: 25px;
+
+}
+.remenber-forget a, .register-link a{
+    color: white;
+    text-decoration: none;
+    transition: 0.5;
+    font-weight: bold;
+}
+.remenber-forget a , .register-link a:hover{
+    text-decoration: underline;
+}
+.login-btn{
+    width: 100%;
+    padding: 15px;
+    border-radius: 25px;
+    outline: none;
+    border: 0;
+    font-weight: bold;
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: 0,5s;
+}
+.login-btn:hover{
+    background-color: transparent;
+    border: 2px solid rgb(105, 96, 96);
+    color: white;
+}
+.register-link{
+    text-align: center;
+    margin-top: 25px;
+    color: white;
+    font-size: 14px;
+
+}
+

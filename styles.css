@@ -1,0 +1,162 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;600;700;800&display=swap');
+
+/* Reset & Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Urbanist', sans-serif;
+}
+
+body {
+    background-color: #f8f8f8;
+    overflow-x: hidden;
+}
+
+/* Alert Banner */
+.alert {
+    background-color: #396e33;
+    color: white;
+    font-size: 14px;
+    text-align: center;
+    padding: 10px 0;
+    font-weight: 600;
+}
+
+/* Navigation */
+.nav {
+    background: #fff;
+    padding: 15px 0;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.nav__container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between; /* Espacement entre les éléments */
+    align-items: center;
+}
+
+.nav__logo {
+    font-size: 26px;
+    font-weight: 700;
+    text-decoration: none;
+    color: #333;
+}
+
+.nav__links {
+    list-style: none;
+    display: flex;
+    justify-content: center; /* Centre les liens horizontalement */
+    align-items: center; /* Centre les liens verticalement */
+    gap: 25px;
+}
+
+.nav__links a {
+    text-decoration: none;
+    font-size: 18px;
+    color: #333;
+    font-weight: 600;
+    transition: color 0.3s ease-in-out;
+}
+
+.nav__links a:hover {
+    color: #396e33;
+    text-decoration: underline;
+}
+
+/* Regroupement de la barre de recherche et des actions */
+.nav__right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-grow: 1;
+    justify-content: flex-end;
+}
+
+/* Barre de recherche */
+.nav__search {
+    display: flex;
+    align-items: center;
+    background: #eee;
+    padding: 8px 12px;
+    border-radius: 25px;
+}
+
+.nav__search input {
+    border: none;
+    background: transparent;
+    outline: none;
+    padding: 5px;
+    font-size: 14px;
+    width: 150px;
+}
+
+.search-btn {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    color: #333;
+}
+
+/* Actions de l'en-tête */
+.header-actions {
+    display: flex;
+    gap: 10px;
+    font-size: 10px;
+    align-items: center;
+}
+
+/* Mise à jour du positionnement des boutons d'action */
+.header-action-btn {
+    font-size: 20px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    position: relative; /* Assure que le badge est positionné par rapport à ce bouton */
+    transition: color 0.3s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+    border-radius: 50%;
+}
+
+/* Effet de survol des boutons d'action */
+.header-action-btn:hover {
+    color: #396e33;
+    background-color: rgba(57, 110, 51, 0.1);
+}
+
+/* Mise à jour de la position du badge de notification */
+.btn-badge {
+    position: absolute;
+    top: -4px; /* Ajusté pour rapprocher le badge */
+    right: -4px; /* Ajusté pour équilibrer la position */
+    background: #ff0000;
+    color: white;
+    font-size: 10px;
+    padding: 3px 6px;
+    border-radius: 50%;
+    font-weight: bold;
+}
+
+/* Icône du bouton d'action */
+.header-action-btn ion-icon {
+    font-size: 24px;
+}
+
+/* Texte des boutons d'action */
+.btn-text {
+    font-size: 16px;
+    font-weight: bold;
+    margin-right: 5px;
+}

@@ -1,0 +1,4 @@
+display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px; /* Espace entre les deux champs */
+    margin-bottom: 25px;
